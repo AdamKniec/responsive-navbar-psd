@@ -1,61 +1,118 @@
 body {
     margin: 0;
-    .navbar {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        background-color: #000000;
-        .img-wrapper {
-                display: flex;
-                align-items: center;
-                margin-right: 15%;
-        }
-        .navigation-details-wrapper {
+    .header {
+        background-image: url('/img/bg-img.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 500px;
+
+        .navbar {
             display: flex;
-            flex-direction: column;
-            align-items: flex-end;
-            padding-top: 15px;
-            .contact-details {
-                display: flex;
-                font-size: 14px;
-                line-height: 21px;
-                color: #f93542;
-                font-family: "Open Sans";
-                font-weight: 400;
-                .phone-number {
+            justify-content: center;
+            align-items: center;
+            background-color: #000000;
+            .img-wrapper {
                     display: flex;
-                    justify-content: center;
-                    padding-right: 30px;
-                    &::before {
-                        content: url('/img/mobile-phone-icon.png');
-                        padding-right: 10px;
-                    }
-                }
-                .e-mail {
-                    display: flex;
-                    justify-content: center;
-                    &::before {
-                        content: url('/img/mail-icon.png');
-                        padding-right: 10px;
-                    }
-                }
+                    align-items: center;
+                    margin-right: 15%;
             }
-            .nav-list {
+            .navigation-details-wrapper {
                 display: flex;
-                list-style-type: none;
-                margin: 0;
-                text-transform: uppercase;
-                .list-item {
-                    padding: 10px;
-                    padding-bottom: 15px;
-                    padding-right: 0;
-                    padding-left: 50px;
+                flex-direction: column;
+                align-items: flex-end;
+                padding-top: 15px;
+                .contact-details {
+                    display: flex;
+                    font-size: 14px;
                     line-height: 21px;
-                    color: #ffffff;
+                    color: #f93542;
                     font-family: "Open Sans";
-                    font-weight: 700;
+                    font-weight: 400;
+                    .phone-number {
+                        display: flex;
+                        justify-content: center;
+                        padding-right: 30px;
+                        &::before {
+                            content: url('/img/mobile-phone-icon.png');
+                            padding-right: 10px;
+                        }
+                    }
+                    .e-mail {
+                        display: flex;
+                        justify-content: center;
+                        &::before {
+                            content: url('/img/mail-icon.png');
+                            padding-right: 10px;
+                        }
+                    }
+                }
+                .nav-list {
+                    display: flex;
+                    list-style-type: none;
+                    margin: 0;
+                    text-transform: uppercase;
+                    li {
+                        padding: 10px;
+                        padding-bottom: 15px;
+                        padding-right: 0;
+                        margin-left: 45px;
+                        line-height: 21px;
+                        font-family: "Open Sans";
+                        text-decoration: none;
+                        font-weight: 700;
+                        a {
+                            color: #ffffff;
+                            text-decoration: none;
+                            font-weight: 700;
+                            &:hover {
+                                color: #f93542;
+                                cursor: pointer;
+                            }
+                            
+                        }
+                       &.sub-menu-trigger {
+                           position: relative;
+                           display: flex;
+                           justify-content: center;
+                            &:hover {
+                                a {
+                                    color: #f93542;
+                                }
+                                .sub-menu {
+                                    display: block;
+                                }
+                            }
+                            .sub-menu {
+                                position: absolute;
+                                top: 40px;
+                                background-color: #fff;
+                                list-style-type: none;
+                                border-top: 4px solid #f93542;
+                                padding:  15px 0 15px 0;
+                                text-transform: none;
+                                display: none;
+                                li {
+                                    margin: 0px;
+                                    padding: 10px;
+                                    padding: 0px 55px 20px 20px;
+                                    a {
+                                        color: black;
+                                    }
+                                    &:hover {
+                                        cursor: pointer;
+                                        a {
+                                            color: #f93542;     
+                                        }
+                                    }
+                                }
+    
+                            }    
+                        }
+                        
+                    }
                 }
             }
-        }
-    }    
-}
+        }    
+    }
+    
+    }
