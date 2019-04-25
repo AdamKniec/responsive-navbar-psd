@@ -5,7 +5,6 @@ body {
         background-repeat: no-repeat;
         background-size: cover;
         height: 500px;
-
         .navbar {
             display: flex;
             justify-content: center;
@@ -88,13 +87,13 @@ body {
                                 background-color: #fff;
                                 list-style-type: none;
                                 border-top: 4px solid #f93542;
-                                padding:  15px 0 15px 0;
+                                padding: 15px 0px 0px 0px;
                                 text-transform: none;
                                 display: none;
                                 li {
                                     margin: 0px;
                                     padding: 10px;
-                                    padding: 0px 55px 20px 20px;
+                                    padding: 0px 55px 20px 0px;
                                     a {
                                         color: black;
                                     }
@@ -112,7 +111,96 @@ body {
                     }
                 }
             }
+            .hamburger-menu {
+                cursor: pointer;
+                width: 40px;
+                border: 0;
+                border-top: 4px solid white;
+                background: transparent;
+                position: relative;
+                border-bottom: 4px solid white;
+                transition: 0.2s;
+                outline: none;
+                display: none;
+                padding: 10px;
+                &:after {
+                    content: '';
+                    position: absolute;
+                    top: -2px;
+                    left: 0;
+                    width: 100%;
+                    border-top: 4px solid #ffffff;
+                    transform: translateY(10px);
+                }
+            }
         }    
     }
+   
+    }
+ @media screen and (max-width: 1199px){
+        body {
+            .header {
+                background-position: center;
+                height: 100vh;
+                .navbar {
+                    height: 88px;
+                    .img-wrapper {
+                        z-index: 1;
+                    }
+                    .navigation-details-wrapper {
+                        position: absolute;
+                        right:0;
+                        display: flex;
+                        justify-content: flex-end;
+                        flex-direction: column-reverse;
+                        background-color: black;
+                        align-items: stretch;
+                        top: 0;
+                        height: 100%;
+                        padding-top: 0;
+                        overflow: hidden;
     
+                        .nav-list {
+                            display: flex;
+                            flex-direction: column;
+                            padding-left: 0;
+                            margin: 0;
+                            margin-top: 100px;
+                            li {
+                                margin-left: 0;
+                                padding: 0;
+                                padding-bottom: 30px;
+                                a {
+                                    padding-left: 20px;
+                                }
+                               &.sub-menu-trigger {
+                                    display: block;
+                                    .sub-menu {
+                                        position: relative;
+                                        border-top: none;
+                                        top: 10px;
+                                    }
+                                }
+                            }
+                        }
+                        .contact-details {
+                            display: flex;
+                            flex-direction: column;
+                            padding-left: 20px;
+                            padding-right: 10px;
+                            .phone-number {
+                                padding-bottom: 10px;
+                            }
+                        }
+                    }
+                    .active {
+                        width: 200px;
+                    }
+                    .hamburger-menu {
+                        display: block;
+                    }
+                }    
+            }
+            
+        }
     }
