@@ -1,5 +1,4 @@
 body {
-    overflow: hidden;
     margin: 0;
     .header {
         background-image: url('/img/bg-img.jpg');
@@ -166,7 +165,8 @@ body {
                         height: 100%;
                         padding-top: 0;
                         right: -200px;
-                        transition: right 0.2s;
+                        width: 0;
+                        transition: 1.5s;
                         .nav-list {
                             display: flex;
                             flex-direction: column;
@@ -201,9 +201,8 @@ body {
                         }
                     }
                     .active {
-                        // width: 200px;
+                        width: 200px;
                         right: 0;
-                        transition: right 0.2s;
                     }
                     .hamburger-menu {
                         display: block;
