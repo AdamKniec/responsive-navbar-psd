@@ -127,15 +127,16 @@ body {
         top: 0;
         height: 100%;
         padding-top: 0;
-        right: -200px;
         width: 0;
-        transition: 1.5s; }
+        transition: .5s;
+        overflow-x: hidden; }
         body .header .navbar .navigation-details-wrapper .nav-list {
           display: flex;
           flex-direction: column;
           padding-left: 0;
           margin: 0;
-          margin-top: 100px; }
+          margin-top: 100px;
+          width: 170px; }
           body .header .navbar .navigation-details-wrapper .nav-list li {
             margin-left: 0;
             padding: 0;
@@ -147,17 +148,18 @@ body {
               body .header .navbar .navigation-details-wrapper .nav-list li.sub-menu-trigger .sub-menu {
                 position: relative;
                 border-top: none;
-                top: 10px; }
+                top: 10px;
+                width: 200px; }
         body .header .navbar .navigation-details-wrapper .contact-details {
           display: flex;
           flex-direction: column;
           padding-left: 20px;
-          padding-right: 10px; }
+          padding-right: 10px;
+          width: 170px; }
           body .header .navbar .navigation-details-wrapper .contact-details .phone-number {
             padding-bottom: 10px; }
       body .header .navbar .active {
-        width: 200px;
-        right: 0; }
+        width: 200px; }
       body .header .navbar .hamburger-menu {
         display: block; } }
 
