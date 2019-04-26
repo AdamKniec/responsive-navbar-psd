@@ -1,15 +1,21 @@
-//toggle mobile menu
+//Mobile menu handler
 (function(){
-    const hamburger = document.querySelector('.hamburger-menu');
+
+    const header = document.querySelector('.header');    
+    const menuOpen = document.querySelector('.hamburger-menu');
+    const menuClose = document.querySelector('.hamburger-menu-close');
     const mobileSideNav = document.querySelector('.navigation-details-wrapper');
-    
-    hamburger.addEventListener('click', toggleMobilenavbar);
-    function toggleMobilenavbar(){
-        // mobileSideNav.classList.add('active');
-        if(!(mobileSideNav.classList.contains('active'))){
+
+    header.addEventListener('click', toggleMobilenavbar);
+    function toggleMobilenavbar(e){
+        if(e.target === menuOpen || e.target.closest('.navigation-details-wrapper') ) {
             mobileSideNav.classList.add('active');
+            menuOpen.classList.add('hidden');
+            menuClose.classList.add('visible');
         } else {
             mobileSideNav.classList.remove('active');
+            menuOpen.classList.remove('hidden');
+            menuClose.classList.remove('visible');
         }
     }
 })();

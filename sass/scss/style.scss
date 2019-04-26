@@ -113,18 +113,12 @@ body {
             }
             .hamburger-menu {
                 cursor: pointer;
-                width: 40px;
+                width: 35px;
                 border: 0;
                 border-top: 4px solid white;
-
-
-
-
-
                 background: transparent;
                 position: relative;
                 border-bottom: 4px solid white;
-
                 transition: 0.2s;
                 outline: none;
                 display: none;
@@ -138,7 +132,14 @@ body {
                     border-top: 4px solid #ffffff;
                     transform: translateY(10px);
                 }
+                
             }
+            .hamburger-menu-close {
+                display: none;
+            }
+            // .hidden {
+            //     display: none;
+            // }
         }    
     }
    
@@ -208,7 +209,17 @@ body {
                     }
                     .hamburger-menu {
                         display: block;
-
+                    }
+                    .hamburger-menu-close {
+                        z-index: 1;
+                        width: 35px;
+                       
+                    }
+                     .hidden {
+                            display: none;
+                        }
+                    .visible {
+                        display: block;
                     }
                 }    
             }

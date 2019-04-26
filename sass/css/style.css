@@ -89,7 +89,7 @@ body {
                       color: #f93542; }
       body .header .navbar .hamburger-menu {
         cursor: pointer;
-        width: 40px;
+        width: 35px;
         border: 0;
         border-top: 4px solid white;
         background: transparent;
@@ -107,6 +107,8 @@ body {
           width: 100%;
           border-top: 4px solid #ffffff;
           transform: translateY(10px); }
+      body .header .navbar .hamburger-menu-close {
+        display: none; }
 
 @media screen and (max-width: 1199px) {
   body .header {
@@ -161,6 +163,13 @@ body {
       body .header .navbar .active {
         width: 200px; }
       body .header .navbar .hamburger-menu {
+        display: block; }
+      body .header .navbar .hamburger-menu-close {
+        z-index: 1;
+        width: 35px; }
+      body .header .navbar .hidden {
+        display: none; }
+      body .header .navbar .visible {
         display: block; } }
 
 /*# sourceMappingURL=style.css.map */
