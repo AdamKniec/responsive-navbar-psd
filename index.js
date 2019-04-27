@@ -2,12 +2,17 @@
 (function(){
 
     const header = document.querySelector('.header');    
-    const menuOpen = document.querySelector('.hamburger-menu');
-    const menuClose = document.querySelector('.hamburger-menu-close');
+    const menuOpen = document.querySelector('.button-menu-open');
+    const menuClose = document.querySelector('.button-menu-close');
     const mobileSideNav = document.querySelector('.navigation-details-wrapper');
 
     header.addEventListener('click', toggleMobilenavbar);
     function toggleMobilenavbar(e){
+        let items = document.querySelectorAll('.header > div:not(.navigation-details-wrapper)');
+        items.forEach = (item) => {
+            console.log(item);
+        }
+
         if(e.target === menuOpen || e.target.closest('.navigation-details-wrapper') ) {
             mobileSideNav.classList.add('active');
             menuOpen.classList.add('hidden');

@@ -45,9 +45,7 @@ body {
           margin: 0;
           text-transform: uppercase; }
           body .header .navbar .navigation-details-wrapper .nav-list li {
-            padding: 10px;
-            padding-bottom: 15px;
-            padding-right: 0;
+            padding: 10px 0px 15px 10px;
             margin-left: 45px;
             line-height: 21px;
             font-family: "Open Sans";
@@ -74,22 +72,21 @@ body {
                 background-color: #fff;
                 list-style-type: none;
                 border-top: 4px solid #f93542;
-                padding: 15px 0px 0px 0px;
+                padding: 15px 0px 0px 20px;
                 text-transform: none;
                 display: none; }
                 body .header .navbar .navigation-details-wrapper .nav-list li.sub-menu-trigger .sub-menu li {
                   margin: 0px;
-                  padding: 10px;
                   padding: 0px 55px 20px 0px; }
                   body .header .navbar .navigation-details-wrapper .nav-list li.sub-menu-trigger .sub-menu li a {
-                    color: black; }
+                    color: #000000; }
                   body .header .navbar .navigation-details-wrapper .nav-list li.sub-menu-trigger .sub-menu li:hover {
                     cursor: pointer; }
                     body .header .navbar .navigation-details-wrapper .nav-list li.sub-menu-trigger .sub-menu li:hover a {
                       color: #f93542; }
-      body .header .navbar .hamburger-menu {
+      body .header .navbar .button-menu-open {
         cursor: pointer;
-        width: 35px;
+        width: 25px;
         border: 0;
         border-top: 4px solid white;
         background: transparent;
@@ -99,7 +96,7 @@ body {
         outline: none;
         display: none;
         padding: 10px; }
-        body .header .navbar .hamburger-menu:after {
+        body .header .navbar .button-menu-open:after {
           content: '';
           position: absolute;
           top: -2px;
@@ -107,7 +104,7 @@ body {
           width: 100%;
           border-top: 4px solid #ffffff;
           transform: translateY(10px); }
-      body .header .navbar .hamburger-menu-close {
+      body .header .navbar .button-menu-close {
         display: none; }
 
 @media screen and (max-width: 1199px) {
@@ -124,7 +121,7 @@ body {
         display: flex;
         justify-content: flex-end;
         flex-direction: column-reverse;
-        background-color: black;
+        background-color: #000000;
         align-items: stretch;
         top: 0;
         height: 100%;
@@ -136,13 +133,13 @@ body {
           display: flex;
           flex-direction: column;
           padding-left: 0;
-          margin: 0;
-          margin-top: 100px;
-          width: 170px; }
+          margin: 100px 0 0 0;
+          width: 170px;
+          font-size: 16px; }
           body .header .navbar .navigation-details-wrapper .nav-list li {
             margin-left: 0;
-            padding: 0;
-            padding-bottom: 30px; }
+            padding: 0 0 30px 0;
+            width: 200px; }
             body .header .navbar .navigation-details-wrapper .nav-list li a {
               padding-left: 20px; }
             body .header .navbar .navigation-details-wrapper .nav-list li.sub-menu-trigger {
@@ -151,7 +148,8 @@ body {
                 position: relative;
                 border-top: none;
                 top: 10px;
-                width: 200px; }
+                width: 200px;
+                padding: 15px 0px 0px 0px; }
         body .header .navbar .navigation-details-wrapper .contact-details {
           display: flex;
           flex-direction: column;
@@ -162,11 +160,11 @@ body {
             padding-bottom: 10px; }
       body .header .navbar .active {
         width: 200px; }
-      body .header .navbar .hamburger-menu {
+      body .header .navbar .button-menu-open {
         display: block; }
-      body .header .navbar .hamburger-menu-close {
+      body .header .navbar .button-menu-close {
         z-index: 1;
-        width: 35px; }
+        width: 45px; }
       body .header .navbar .hidden {
         display: none; }
       body .header .navbar .visible {
