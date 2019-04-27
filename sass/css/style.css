@@ -109,8 +109,6 @@ body {
     background-repeat: no-repeat;
     background-size: cover;
     height: calc(100vh - 88px); }
-  body .darkened {
-    filter: brightness(0.4); }
 
 @media screen and (max-width: 1199px) {
   body .navbar {
@@ -174,6 +172,8 @@ body {
     body .navbar .visible {
       display: block; }
   body .header {
-    background-position: center; } }
+    background-position: center; }
+  body .darkened {
+    filter: brightness(0.4); } }
 
 /*# sourceMappingURL=style.css.map */

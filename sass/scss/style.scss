@@ -142,9 +142,9 @@ body {
         }
        
     }
-     .darkened {
-            filter: brightness(0.4);
-        }
+    //  .darkened {
+    //         filter: brightness(0.4);
+    //     }
 }
  @media screen and (max-width: 1199px){
         body {
@@ -230,8 +230,9 @@ body {
 
             .header {
                 background-position: center;
-                // height: 100vh;;
-                  
             }   
+            .darkened {
+                        filter: brightness(0.4);
+                    }
         }
     }
