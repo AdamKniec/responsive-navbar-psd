@@ -10,13 +10,11 @@
 
     function toggleMobilenavbar(e){
         if(e.target === menuOpen || e.target.closest('.navigation-details-wrapper')) {
-            console.log('powinno zostac open')
             mobileSideNav.classList.add('active');
             menuOpen.classList.add('hidden');
             menuClose.classList.add('visible');
             main.classList.add('darkened');
         } else {
-            console.log('powinno zostac closed')
             mobileSideNav.classList.remove('active');
             menuOpen.classList.remove('hidden');
             menuClose.classList.remove('visible');
