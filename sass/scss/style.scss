@@ -138,13 +138,8 @@ body {
             background-repeat: no-repeat;
             background-size: cover;
             height: calc(100vh - 88px);
-            
-        }
-       
+        } 
     }
-    //  .darkened {
-    //         filter: brightness(0.4);
-    //     }
 }
  @media screen and (max-width: 1199px){
         body {
@@ -168,7 +163,6 @@ body {
                     transition: .5s;
                     overflow-x: hidden;
                     z-index: 1;
-
                     .nav-list {
                         display: flex;
                         flex-direction: column;
@@ -206,9 +200,6 @@ body {
                         }
                     }
                 }
-                // .focus {
-                //     filter: brightness(100%)
-                // }
                 .active {
                     width: 200px;
                 }
