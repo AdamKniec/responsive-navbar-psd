@@ -28,13 +28,13 @@ body {
           justify-content: center;
           padding-right: 30px; }
           body .navbar .navigation-details-wrapper .contact-details .phone-number::before {
-            content: url("/img/mobile-phone-icon.png");
+            content: url("/responsive-navbar-psd/img/mobile-phone-icon.png");
             padding-right: 10px; }
         body .navbar .navigation-details-wrapper .contact-details .e-mail {
           display: flex;
           justify-content: center; }
           body .navbar .navigation-details-wrapper .contact-details .e-mail::before {
-            content: url("/img/mail-icon.png");
+            content: url("/responsive-navbar-psd/img/mail-icon.png");
             padding-right: 10px; }
       body .navbar .navigation-details-wrapper .nav-list {
         display: flex;
@@ -105,7 +105,7 @@ body {
     body .navbar .button-menu-close {
       display: none; }
   body .main .header {
-    background-image: url("/img/bg-img.jpg");
+    background-image: url("/responsive-navbar-psd/img/bg-img.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     height: calc(100vh - 88px); }
