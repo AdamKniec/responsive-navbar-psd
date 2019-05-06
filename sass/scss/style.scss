@@ -30,7 +30,10 @@ body {
                     justify-content: center;
                     padding-right: 30px;
                     &::before {
-                        content: url('/img/mobile-phone-icon.png');
+                        // local testing img path
+                        // content: url('/img/mobile-phone-icon.png');
+                        // github pages testing path
+                        content: url('/responsive-navbar-psd/img/mobile-phone-icon.png');
                         padding-right: 10px;
                     }
                 }
@@ -38,7 +41,10 @@ body {
                     display: flex;
                     justify-content: center;
                     &::before {
-                        content: url('/img/mail-icon.png');
+                        // local testing img path
+                        // content: url('/img/mail-icon.png');
+                        // github pages testing path
+                        content: url('/responsive-navbar-psd/img/mail-icon.png');
                         padding-right: 10px;
                     }
                 }
@@ -134,7 +140,10 @@ body {
     }  
     .main {
         .header {
-            background-image: url('/img/bg-img.jpg');
+            // local testing img path 
+            // background-image: url('/img/bg-img.jpg');
+            // github pages img path
+            background-image: url('/responsive-navbar-psd/img/bg-img.jpg');
             background-repeat: no-repeat;
             background-size: cover;
             height: calc(100vh - 88px);
